@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      run: 
+      - run: 
         npm install - g @angular/cli
-      run: 
+      - run: 
         ng serve -o --poll=2000      
