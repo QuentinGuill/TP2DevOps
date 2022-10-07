@@ -2,7 +2,7 @@ name: pipeline
 run-name: ${{ github.actor }} is making a pull request
 on: [pull_request]
 jobs:
-  job_install:
+  job-install:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
