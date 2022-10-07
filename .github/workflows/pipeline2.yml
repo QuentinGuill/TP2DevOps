@@ -15,5 +15,5 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm install -g @angular/cli
-      - run: ng build --prod
+      - run: ng build
       
