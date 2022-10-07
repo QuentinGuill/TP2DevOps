@@ -10,4 +10,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g @angular/cli
+  job-execute:
+    needs: job-install
+    steps:
       - run: ng serve -o --poll=2000
