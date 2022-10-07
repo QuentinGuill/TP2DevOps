@@ -13,5 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - run: npm install
       - run: npm install -g @angular/cli
-      - run: ng serve -o --poll=2000
+      - run: ng build --prod
+      
