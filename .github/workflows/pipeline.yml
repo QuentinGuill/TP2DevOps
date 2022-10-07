@@ -11,4 +11,4 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm install -g @angular/cli
-      - run: ng test --browsers ChromeHeadless
+      - run: ng test --browsers ChromeHeadless --watch=false
